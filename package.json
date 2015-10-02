@@ -1,0 +1,20 @@
+{
+  "name": "clunderscore",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/classeur/cl_.git"
+  },
+  "author": "Benoit Schweblin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/classeur/cl_/issues"
+  },
+  "homepage": "https://github.com/classeur/cl_#readme",
+  "description": "",
+  "dependencies": {}
+}
