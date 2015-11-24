@@ -140,6 +140,15 @@
 	objectProperties = build(objectProperties);
 
 	Object.defineProperties(Array.prototype, arrayProperties);
+	Object.defineProperties(Int8Array.prototype, arrayProperties);
+	Object.defineProperties(Uint8Array.prototype, arrayProperties);
+	Object.defineProperties(Uint8ClampedArray.prototype, arrayProperties);
+	Object.defineProperties(Int16Array.prototype, arrayProperties);
+	Object.defineProperties(Uint16Array.prototype, arrayProperties);
+	Object.defineProperties(Int32Array.prototype, arrayProperties);
+	Object.defineProperties(Uint32Array.prototype, arrayProperties);
+	Object.defineProperties(Float32Array.prototype, arrayProperties);
+	Object.defineProperties(Float64Array.prototype, arrayProperties);
 	Object.defineProperties(Function.prototype, functionProperties);
 	Object.defineProperties(Object.prototype, objectProperties);
 	if (typeof window != 'undefined') {

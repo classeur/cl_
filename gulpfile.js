@@ -8,7 +8,7 @@ gulp.task('minor', bumpTask('minor'));
 gulp.task('major', bumpTask('major'));
 
 gulp.task('tag', function(cb) {
-    var version = require('./package.json').version;
+    var version = require('./package').version;
     var tag = 'v' + version;
     util.log('Tagging as: ' + util.colors.cyan(tag));
     exec([
