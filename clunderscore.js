@@ -112,6 +112,17 @@
     return memo
   }
 
+  objectProperties.cl_some = function (cb) {
+    var i = 0
+    var keys = Object.keys(this)
+    var length = keys.length
+    for (; i < length; i++) {
+      if (cb(this[keys[i]], keys[i], this)) {
+        return true
+      }
+    }
+  }
+
   objectProperties.cl_extend = function (obj) {
     if (obj) {
       var i = 0
